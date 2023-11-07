@@ -1,4 +1,20 @@
-const swiper = new Swiper(".my-Swiper", {
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 60,
+  autoplay: {
+    delay: 4000,
+  },
+  navigation: {
+    nextEl: ".swiper-btn-next",
+    prevEl: ".swiper-btn-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var swiper = new Swiper(".my-Swiper", {
   slidesPerView: 1,
   spaceBetween: 60,
   simulateTouch: false,
@@ -16,7 +32,7 @@ const swiper = new Swiper(".my-Swiper", {
 });
 
 // cards slider
-const swiper2 = new Swiper(".mySwiper2", {
+var swiper = new Swiper(".mySwiper2", {
   spaceBetween: 30,
   autoplay: {
     delay: 4000,
